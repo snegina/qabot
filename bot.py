@@ -25,9 +25,9 @@ def welcome(message):
 @bot.message_handler(content_types=['text'])
 def lalala(message):
 	if message.chat.type == 'private':
-		if message.text == 'Follow my git':
+		if message.text == '👉Follow my git':
 			bot.send_message(message.chat.id, 'https://github.com/snegina')
-		elif message.text == 'Write message':
+		elif message.text == '✍️Write message':
 			bot.send_message(message.chat.id, 'http://t.me/snegina')
 		else:
 			bot.send_message(message.chat.id, 'Не знаю что ответить😢')

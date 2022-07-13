@@ -30,6 +30,8 @@ def lalala(message):
 			bot.send_message(message.chat.id, 'https://github.com/snegina')
 		elif message.text == '✍️Write message':
 			bot.send_message(message.chat.id, 'http://t.me/snegina')
+		elif message.text == '▶️Youtube':
+			bot.send_message(message.chat.id, 'https://youtube.com')	
 		else:
 			bot.send_message(message.chat.id, 'Не знаю что ответить😢')
 

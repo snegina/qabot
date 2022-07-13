@@ -13,7 +13,7 @@ def welcome(message):
 
 	#клавиатура
 	markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-	item1 = types.KeyboardButton("👉Follow my git")
+	item1 = types.KeyboardButton("👉Follow my github")
 	item2 = types.KeyboardButton("✍️Write message")
 
 	markup.add(item1, item2)
@@ -25,7 +25,7 @@ def welcome(message):
 @bot.message_handler(content_types=['text'])
 def lalala(message):
 	if message.chat.type == 'private':
-		if message.text == '👉Follow my git':
+		if message.text == '👉Follow my github':
 			bot.send_message(message.chat.id, 'https://github.com/snegina')
 		elif message.text == '✍️Write message':
 			bot.send_message(message.chat.id, 'http://t.me/snegina')

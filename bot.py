@@ -15,6 +15,7 @@ def welcome(message):
 	markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
 	item1 = types.KeyboardButton("👉Follow my github")
 	item2 = types.KeyboardButton("✍️Write message")
+	item3 = types.KeyboardButton("▶️Youtube")
 
 	markup.add(item1, item2)
 
